@@ -1,5 +1,6 @@
 class DurationFormatter {
-  static String format(Duration duration){
+  DurationFormatter._();
+  static String duration_format(Duration duration){
     final hours = duration.inHours;
     final minutes = duration.inMinutes.remainder(60);
     final seconds = duration.inSeconds.remainder(60);
